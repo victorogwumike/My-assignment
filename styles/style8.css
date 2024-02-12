@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/*
+typography is the way text is arranged
+*/
+
+body {
+    padding: 10%;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* input,button {
+    font: inherit;
+} */ 
+
+p    {
+    line-height: 1.5;
+}

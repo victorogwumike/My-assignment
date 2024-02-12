@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/* ||Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100px;
+    height: auto;
+}
+
+/* UTILITY STYLE */
+    .nowrap {
+        white-space: nowrap;
+    }
+
+/* ||GENERAL STYLE */
+body {
+    font: 1.5rem 'Nunito', sans-serif;
+    min-height: 100vh;
+
+    background-color: #475569;
+    background-image: radial-gradient(whitesmoke,#475569);
+    flex-direction: column;
+}
+
+header, footer {
+    position: sticky;
+    background-color: #1e293b;
+    color: whitesmoke;
+    text-align: center;
+}
+
+header {
+    top: 0;
+}
+
+nav {
+    background-color: azure;
+    padding: 0.5rem;
+    border-bottom: 2px solid black;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a:visited {
+    color: black;
+}
+
+nav a:hover, nav a:focus {
+    color: hsla(0, 0%, 0%, 0.6);
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+footer {
+    bottom: 0;
+}
+
+/*PROFILE CARD*/
+.card {
+    scroll-margin-top: 8rem;
+    width: min(100%,350px);
+    background-color: gray;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+/* || Small */
+@media  screen and (min-width:356px) {
+    body {
+        background-color: green;
+        background-image: radial-gradient(whitesmoke, green);
+    }
+    nav {
+        display: none;
+    }
+}
+
+/* || Medium */
+@media  screen and (min-width:576px) {
+    body {
+        background-color: gold;
+        background-image: radial-gradient(whitesmoke, gold);
+        }
+}
+
+/* || Large */
+@media  screen and (min-width:768px) {
+    body {
+        background-color: firebrick;
+        background-image: radial-gradient(whitesmoke, firebrick);
+        }
+    }
+
+    
+    /* || XL */
+    @media  screen and (min-width:900px) {
+        body {
+            background-color: rebeccapurple;
+            background-image: radial-gradient(whitesmoke,rebeccapurple);
+        }
+    }
+    
+    /* || Mobile Device Landscape*/
+        @media  screen and (max-height:425px) and (min-aspect-ratio:7/4) {
+            body {
+                background-color: dodgerblue;
+             background-image: radial-gradient(whitesmoke, dodgerblue)
+            }
+
+            h1, h2 {
+                font-size: 1.5rem;
+            }
+
+            nav {
+                display: none;
+            }
+        }

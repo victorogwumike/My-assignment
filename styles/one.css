@@ -1,0 +1,57 @@
+body {
+    text-align: center;
+    background-color: gray;
+    font-family: sans-serif;
+}
+
+header {
+    background: url("../img/jeff-bg.png");
+    background-size: cover;
+    color: beige;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+img {
+    border: 7px solid rgba(245, 245, 245, 0.507);
+    border-radius: 10px;
+    margin: 40px 0px 0px 0px;
+}
+
+ul {
+    padding: 10px;
+    background-color: black;
+}
+
+li {
+    display: inline;
+    padding: 0px 10px 0px 10px;
+}
+
+article {
+    max-width: 500px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+video {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+@media (max-width: 500px) {
+    h1 {
+      font-size: 36px;  
+    }
+    li {
+        display: block;
+        padding: 5px;
+    }
+}

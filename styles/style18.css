@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/* Begin reset */
+* {
+    margin: 0;
+    padding-inline-start: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+/* End reset */
+
+/* Utility class */
+.nowrap {
+    white-space: nowrap;
+}
+
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+/* End utility class */
+
+body {
+    font-family: 'Nunito', sans-serif;
+    min-height: 100vh;
+    background-color:aliceblue;
+    /* background-image: url("../img/bubbles.png"),linear-gradient(to left, blue, white);
+    background-repeat: repeat-y, no-repeat;
+    background-position: right; */
+    background: repeat-y right center url("../img/bubbles.png"), no-repeat linear-gradient(to left, steelblue, white);
+    background-size: 20%, auto;
+}
+
+.container {
+    background-color: rgb(251, 210, 126);
+    background-image: url("../img/agric.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: cover;
+}
+
+.hero {
+    border-bottom: 2px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+
+    background-color: hsla(0, 0%, 0%, 0.445),
+}
+
+.h1 {
+    font-size: 500%;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px blue;
+   /*  background-color: hsla(271, 76%, 53%, 0.447);
+    padding: 0.5rem;
+    border-radius: 10px; */
+}
+
+.profile-pic-figure {
+    width: 35%;
+ }
+
+.profile-pic-figure img {
+    width: 100%;
+    height: auto;
+    min-width: 100px;
+    border: 5px double gray;
+    border-radius: 50%;
+}
+
+.example {
+    margin-top: 1rem;
+    padding-left: 20px;
+    border:1px solid red;
+}
+
+.example image {
+    width: 25%;
+    height: auto;
+}
+
+.clip {
+    font-weight: 800;
+    font-size: 15rem;
+    text-align: center;
+    background-image: url("../img/waterfall3.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
